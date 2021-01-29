@@ -1,0 +1,60 @@
+package fr.dampierre.lucas;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ */
+
+public final class App {
+    private App() {
+    }
+
+    /**
+     * Says hello to the world.
+     * 
+     * @param args The arguments of the program.
+     */
+    public static void main(String[] args) {
+        String dbURL = "jdbc:mysql://localhost:3306/projet";
+        String username = "root";
+        String password = "lucas123";
+        boolean ok = true;
+
+        try {
+
+            Connection conn = DriverManager.getConnection(dbURL, username, password);
+
+            if (conn != null) {
+                System.out.println("Connected");
+                String sql = "SELECT * FROM users ";
+                PreparedStatement statement = conn.prepareStatement(sql);
+                ResultSet result = statement.executeQuery(sql);
+                int count = 0;
+                // statement.setString(1, "4");
+                while (result.next()) {
+                    String us_nom = result.getString(2);
+                    String us_prenom = result.getString(3);
+                    String us_profession = result.getString(4);
+                    String output = "User #%d: %s - %s - %s";
+                    System.out.println(String.format(output, ++count, us_nom, us_prenom, us_profession));
+                }
+
+            }
+        }
+
+        catch (
+
+        SQLException ex) {
+            ex.printStackTrace();
+            System.out.println("Erreur Connected");
+        }
+
+    }
+
+}
