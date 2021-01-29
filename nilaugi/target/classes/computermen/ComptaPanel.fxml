@@ -28,10 +28,18 @@
                   </TableView>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5031446540880503" layoutX="2.0" layoutY="1.0" orientation="VERTICAL" prefHeight="442.0" prefWidth="250.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="229.0" />
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
         </items>
       </SplitPane>
         <Button layoutX="461.0" layoutY="122.0" onAction="#goConnexion" text="Connexion" />
-      <Button layoutX="435.0" layoutY="84.0" mnemonicParsing="false" text="Utilisateur/Soignant" onAction="#goUser" />
+      <Button layoutX="435.0" layoutY="84.0" mnemonicParsing="false" onAction="#goUser" text="Utilisateur/Soignant" />
    </children>
 </Pane>
