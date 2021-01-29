@@ -10,7 +10,7 @@ public class PanelCompta {
         App.setRoot("ConnexionF");
     }
     @FXML
-    private void goUtilisateur() throws IOException {
+    private void goUser() throws IOException {
         App.setRoot("UtilisateurPanel");
     }
 }

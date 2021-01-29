@@ -31,7 +31,7 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
         </items>
       </SplitPane>
-        <Button layoutX="461.0" layoutY="122.0" onAction="#goConnection" text="Connexion" />
-      <Button layoutX="435.0" layoutY="84.0" mnemonicParsing="false" text="Utilisateur/Soignant" />
+        <Button layoutX="461.0" layoutY="122.0" onAction="#goConnexion" text="Connexion" />
+      <Button layoutX="435.0" layoutY="84.0" mnemonicParsing="false" text="Utilisateur/Soignant" onAction="#goUser" />
    </children>
 </Pane>

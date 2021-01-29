@@ -13,8 +13,12 @@ public class Connexion {
     @FXML
     private ChoiceBox amsd;
     @FXML
-    private void switchToSecondary() throws IOException {
+    private void goCompta() throws IOException {
         App.setRoot("ComptaPanel");
+    }
+    @FXML
+    private void goUser() throws IOException {
+        App.setRoot("UtilisateurPanel");
     }
     @FXML
     private void initialize() {

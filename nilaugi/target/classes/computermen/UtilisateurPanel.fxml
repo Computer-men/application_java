@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.Pane?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computermen.PanelUtilisateur">
    <children>
-      <Button layoutX="274.0" layoutY="163.0" mnemonicParsing="false" onAction="#goConnexion" text="Connexion" />
-      <Button layoutX="281.0" layoutY="200.0" mnemonicParsing="false" onAction="#goCompta" text="Compta" />
+      <Button layoutX="438.0" layoutY="57.0" mnemonicParsing="false" onAction="#goConnexion" text="Connexion" />
+      <Button layoutX="445.0" layoutY="105.0" mnemonicParsing="false" onAction="#goCompta" text="Compta" />
+      <ListView prefHeight="200.0" prefWidth="200.0" />
    </children>
 </Pane>
