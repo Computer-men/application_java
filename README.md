@@ -21,17 +21,22 @@ Le dossier "project_core_programme" contient la partie code, connexion vers base
 
 Le projet "projetMAJ" concerne la base de donnée utilisée.
 
+---------------------------------------------------------------------------------------------------------------
+Poste des salariés.
+---------------------------------------------------------------------------------------------------------------
+Giulian Ladrier: Developpement graphique de l'application.
+Arnaud Poivre: Déploiement de l'architecture de la base de donnée.
+Lucas Duhamel: Gestion fiche de frais.
+Lucas Moyes:Developpement logiciel de l'application.
 
-Poste des saliriés.
-Giulian ladrier: Devloppement graphique de l application.
-Arnaud Poivre: Deploiment de l architecture de la base de donnée.
-Lucas Duhamel: Occupation multiple.
-Lucas Moyes:Devloppement logiciel de l application.
+---------------------------------------------------------------------------------------------------------------
+Avancement: 
+---------------------------------------------------------------------------------------------------------------
+fusion du code qui relie la base de donnée, au code de la partie graphique.
+BDD: création de jeu de donnée afin de l'utilisation de la BDD avec le code java.
+Création du code java et sql plus liaison à la partie graphique.
 
-Avancement: fusion du code qui relis la base de donnée, au code de la partie graphique.
-bdd: creation de jeu de donnée afin de l utilisation de la bdd avec le code java.
-creation de gestion de fiche de frais sous excel.
-creation du code java et sql plus liaisons a la partie graphique.
-
-Probleme rencontré durant les 4h:
-Difficulté d adaptation des requet sql avec le code java.
+---------------------------------------------------------------------------------------------------------------
+Problème rencontré durant les 4h:
+---------------------------------------------------------------------------------------------------------------
+Difficulté d'adaptation des requêtes sql avec le code java.
