@@ -37,6 +37,6 @@ BDD: création de jeu de donnée afin de l'utilisation de la BDD avec le code ja
 Création du code java et sql plus liaison à la partie graphique.
 
 ---------------------------------------------------------------------------------------------------------------
-Problème rencontré durant les 4h:
+Problèmes rencontrés durant les 4h:
 ---------------------------------------------------------------------------------------------------------------
 Difficulté d'adaptation des requêtes sql avec le code java.
