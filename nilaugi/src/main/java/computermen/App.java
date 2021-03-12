@@ -15,8 +15,6 @@ public class App extends Application {
 
     private static Scene scene;
 
-
-
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("ConnexionF"), 600, 600);
@@ -34,8 +32,8 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-            Bdd.conn();
-            launch();
+        Bdd.conn();
+        launch();
     }
 
 }

@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 
 public class PanelUtilisateur {
+
     // Instanciation des objets
     @FXML
     private ListView Frais;
@@ -29,12 +30,12 @@ public class PanelUtilisateur {
     private void afficherFrais() {
         String ficheFrais = "";
         ObservableList listOfItems = Frais.getSelectionModel().getSelectedItems();
-        for (Object item : listOfItems)
-        {
+        for (Object item : listOfItems) {
             ficheFrais += String.format("%s%n", (String) item);
         }
         this.affFrais.setText(ficheFrais);
     }
+
     // Mise à jour des détails
     @FXML
     private void initialize() {
@@ -43,5 +44,5 @@ public class PanelUtilisateur {
         // Affichage dans la zone de texte
 
     }
-    
+
 }
