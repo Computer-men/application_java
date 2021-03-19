@@ -44,5 +44,4 @@ public class PanelUtilisateur {
         // Affichage dans la zone de texte
 
     }
-
 }

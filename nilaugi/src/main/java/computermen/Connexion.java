@@ -8,6 +8,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Connexion {
 
@@ -18,6 +21,9 @@ public class Connexion {
 
     @FXML
     private Text renduBDD;
+
+    @FXML
+    private Text matricule;
 
     @FXML
     private ChoiceBox amsd;
@@ -35,7 +41,9 @@ public class Connexion {
     @FXML // affichage des infos BDD
     private void match() throws IOException {
         if ((User.getText() != null)) {
+            
             renduBDD.setText(Bdd.match(User.getText()));
+
 
         }
     }
@@ -44,5 +52,5 @@ public class Connexion {
     private void initialize() {
         amsd.setItems(amsdlist);
     }
-
+    
 }
