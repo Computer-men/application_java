@@ -5,7 +5,6 @@ Vous retrouverez ici l'avancé sur le projet d'hôpital donné par M.Gahide.
 Nouvelle mise à jour (2 avril 2021)
 ---------------------------------------------------------------------------------------------------------------
 
-
 // Création \\\
 
   -Panel de fiche de frais.
@@ -13,11 +12,9 @@ Nouvelle mise à jour (2 avril 2021)
   -Création du panel fiche de frais.
 
 
-
 // Amélioration \\\
 
   -Mise à jour du panel utilisateur
-
 
 
 // Fonctionnalité \\\
