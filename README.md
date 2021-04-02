@@ -1,6 +1,21 @@
 # application_java
 Vous retrouverez ici l'avancé sur le projet d'hôpital donné par M.Gahide.
 
+---------------------------------------------------------------------------------------------------------------
+Nouvelle mise à jour (2 avril 2021)
+---------------------------------------------------------------------------------------------------------------
+
+Création :
+-Panel de fiche de frais.
+-Création du panel fiche de frais.
+
+Amélioration:
+-Mise à jour du panel utilisateur
+
+Fonctionnalité:
+-Get / Set sur les informations de l'utilisateur connecté.
+-Bouton de déconnexion de compte (fonctionnel).
+A venir : affichage de la fiche de frais de user via bouton (pré-rempli).
 
 ---------------------------------------------------------------------------------------------------------------
 Nouvelle mise à jour (5 février 2021)
