@@ -28,6 +28,8 @@ public class Connexion {
     @FXML
     private ChoiceBox amsd;
 
+
+
     @FXML // transition compta
     private void goCompta() throws IOException {
         App.setRoot("ComptaPanel");

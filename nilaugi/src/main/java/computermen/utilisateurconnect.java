@@ -41,9 +41,9 @@ public class utilisateurconnect {
         return nom_du_connect;
     }
 
-    public void setNom_du_connect(String nom_du_connect1){
-        nom_du_connect = nom_du_connect1;
-    }
+    // public void setNom_du_connect(String nom_du_connect1){
+    //     nom_du_connect = nom_du_connect1;
+    // }
 
     public String getPassword_du_connect(){
         return password_du_connect;

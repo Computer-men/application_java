@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -12,20 +13,22 @@
 
 <VBox alignment="CENTER" prefHeight="269.0" prefWidth="599.0" spacing="20.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computermen.Connexion">
    <children>
-      <Pane prefHeight="600.0" prefWidth="600.0">
+      <Pane prefHeight="231.0" prefWidth="575.0">
          <children>
-            <Label layoutX="265.0" layoutY="31.0" text="Connection" />
-            <ChoiceBox fx:id="amsd" layoutX="225.0" layoutY="134.0" prefWidth="150.0" />
+            <Label layoutX="270.0" layoutY="14.0" text="Connection" />
+            <ChoiceBox fx:id="amsd" layoutX="402.0" layoutY="66.0" prefWidth="150.0" />
             <Button layoutX="486.0" layoutY="171.0" onAction="#goCompta" text="Compta" />
-            <TextField fx:id="User" layoutX="226.0" layoutY="75.0" />
-            <Label layoutX="156.0" layoutY="79.0" text="Utilisateur" />
-            <Label layoutX="147.0" layoutY="104.0" text="Mot de passe" />
+            <TextField fx:id="User" layoutX="225.0" layoutY="37.0" />
+            <Label layoutX="159.0" layoutY="41.0" text="Utilisateur" />
+            <Label layoutX="146.0" layoutY="70.0" text="Mot de passe" />
             <Label layoutX="159.0" layoutY="138.0" text="Fonction" visible="false" />
-            <PasswordField layoutX="226.0" layoutY="100.0" />
+            <PasswordField layoutX="225.0" layoutY="66.0" />
             <Button layoutX="407.0" layoutY="171.0" mnemonicParsing="false" onAction="#goUser" text="Utilisateur" />
-            <Button layoutX="274.0" layoutY="171.0" mnemonicParsing="false" onAction="#match" text="Connexion" />
-            <Text fx:id="renduBDD" fill="#f89156" layoutX="442.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
+            <Button layoutX="263.0" layoutY="126.0" mnemonicParsing="false" onAction="#match" text="Connexion" />
+            <Text fx:id="renduBDD" fill="#f89156" layoutX="258.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" />
             <TextField editable="false" layoutX="392.0" layoutY="113.0" />
+            <CheckBox layoutX="226.0" layoutY="95.0" mnemonicParsing="false" text="Client" />
+            <CheckBox layoutX="285.0" layoutY="95.0" mnemonicParsing="false" text="Comptabilité" />
          </children>
       </Pane>
    </children>

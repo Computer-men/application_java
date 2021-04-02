@@ -21,11 +21,7 @@ public class PanelCompta {
     private Text matricule;
 
 
-    //Lorsque on clique le bouton ConnexionF
-    @FXML
-    private void goConnexion() throws IOException {
-        App.setRoot("ConnexionF");
-    }
+
 
     //Lorsque on clique le bouton UtilisateurPanel
     @FXML
@@ -33,15 +29,35 @@ public class PanelCompta {
         App.setRoot("UtilisateurPanel");
     }
 
+
+    
+    //Lorsque on clique le bouton Deconnexion
+    @FXML
+    private void goConnexion() throws IOException {
+        App.setRoot("ConnexionF");
+        //System.out.println("test");
+
+        //Remet ces variable à null afin d'enlever l'utilisateurconnect
+        String nom = null;
+        String password=null;
+        String matri = null;
+        utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri);
+    }
+
+
     //Lorsque on clique le bouton Actualisation
     @FXML
     private void actualisation() throws IOException {
             //matricule.setText(Bdd.match(User.getText()));
             // name.setText);
             
-            name.setText(utilisateurconnect.getNom_du_connect());
-            matricule.setText(utilisateurconnect.getMatricule_du_connect());
-            
+            if(utilisateurconnect.getNom_du_connect() == null){
+                name.setText("Vous n'est pas connect !");
+                matricule.setText(" ");
+            } else {
+                name.setText(utilisateurconnect.getNom_du_connect());
+                matricule.setText(utilisateurconnect.getMatricule_du_connect());
+            }
             
     }
     

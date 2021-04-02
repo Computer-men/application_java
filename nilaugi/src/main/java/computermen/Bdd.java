@@ -62,6 +62,7 @@ public class Bdd {
                     String password = result.getString(2);
                     String matri = result.getString(3);
 
+                    String test = "Connection reussi !";
 
                     utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri);
                     userconnect.afficherInfoDuConnectCompta();
@@ -71,14 +72,14 @@ public class Bdd {
                     //System.out.print(nom_du_connect_variable.getNom_du_connect());
 
 
-                    return nom;
+                    return test;
                     // System.out.println(nom);
                     // System.out.println(password);
                 }
-                String error = "c'est une erreur";
+                String error = "User ou mdp incorrect !";
                 return error;
             }
-            String error = "c'est une erreur";
+            String error = "User ou mdp incorrect !";
             return error;
         } catch (SQLException ex) {
             ex.printStackTrace();
