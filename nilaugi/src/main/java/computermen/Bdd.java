@@ -63,15 +63,11 @@ public class Bdd {
                     String matri = result.getString(3);
 
 
-                    Liste_du_connecte personne_connecte1 = new Liste_du_connecte(nom, password, matri);
-                    personne_connecte1.afficherInfoDuConnectCompta();
+                    utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri);
+                    userconnect.afficherInfoDuConnectCompta();
 
-                    List<Liste_du_connecte> personne_connecte = new ArrayList<Liste_du_connecte>();
-                    
-                    personne_connecte.add(personne_connecte1);
 
-                    Liste_du_connecte nom_du_connect_variable = personne_connecte.get(0);
-                    //Liste_du_connecte password_du_connecte = personne_connecte.get(1)
+                    //Liste_du_connecte password_du_connecte = personne_connecte.get(1);
                     //System.out.print(nom_du_connect_variable.getNom_du_connect());
 
 

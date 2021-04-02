@@ -10,6 +10,8 @@ import javafx.scene.text.Text;
 
 public class PanelCompta {
 
+
+
     //Declare le label name
     @FXML
     private Text name;
@@ -36,8 +38,10 @@ public class PanelCompta {
     private void actualisation() throws IOException {
             //matricule.setText(Bdd.match(User.getText()));
             // name.setText);
-            name.setText("Erreur");
-            matricule.setText("Erreur");
+            
+            name.setText(utilisateurconnect.getNom_du_connect());
+            matricule.setText(utilisateurconnect.getMatricule_du_connect());
+            
             
     }
     
