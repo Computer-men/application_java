@@ -11,9 +11,11 @@ Création :
 -Création du panel fiche de frais.
 
 Amélioration:
+
 -Mise à jour du panel utilisateur
 
 Fonctionnalité:
+
 -Get / Set sur les informations de l'utilisateur connecté.
 
 -Bouton de déconnexion de compte (fonctionnel).
