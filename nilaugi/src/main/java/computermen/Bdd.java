@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Scanner;
-import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
+
+
+
+
 import javafx.scene.control.TextField;
 
 public class Bdd {

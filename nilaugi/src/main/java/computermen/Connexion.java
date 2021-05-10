@@ -8,9 +8,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import java.util.Random;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Connexion {
 

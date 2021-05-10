@@ -1,19 +1,11 @@
 package computermen;
 
 import java.io.IOException;
-
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
+
 
 public class PanelUtilisateur {
 
-    // Instanciation des objets
-    @FXML
-    private ListView Frais;
-    @FXML
-    private TextArea affFrais;
 
     // Fonctions
     @FXML
@@ -27,21 +19,61 @@ public class PanelUtilisateur {
     }
 
     @FXML
-    private void afficherFrais() {
-        String ficheFrais = "";
-        ObservableList listOfItems = Frais.getSelectionModel().getSelectedItems();
-        for (Object item : listOfItems) {
-            ficheFrais += String.format("%s%n", (String) item);
-        }
-        this.affFrais.setText(ficheFrais);
+    private void afficheFraisJ() throws IOException {
+        App.setRoot("FicheJanvier");
     }
-
-    // Mise à jour des détails
     @FXML
-    private void initialize() {
-        // Objets de la liste
-        Frais.getItems().addAll("29/01/2021", "28/01/2021");
-        // Affichage dans la zone de texte
+    private void afficheFraisF() throws IOException {
+        App.setRoot("FicheFévrier");
+    }
+    @FXML
+    private void afficheFraisM() throws IOException {
+        App.setRoot("FicheMars");
+    }
+    @FXML
+    private void afficheFraisA() throws IOException {
+        App.setRoot("FicheAvril");
+    }
+    @FXML
+    private void afficheFraisMai() throws IOException {
+        App.setRoot("FicheMai");
+    }
+    @FXML
+    private void afficheFraisJuin() throws IOException {
+        App.setRoot("FicheJuin");
+    }
+    @FXML
+    private void afficheFraisJuil() throws IOException {
+        App.setRoot("FicheJuillet");
+    }
+    @FXML
+    private void afficheFraisAo() throws IOException {
+        App.setRoot("FicheAout");
+    }
+    @FXML
+    private void afficheFraisS() throws IOException {
+        App.setRoot("FicheSeptembre");
+    }
+    @FXML
+    private void afficheFraisO() throws IOException {
+        App.setRoot("FicheOctobre");
+    }
+    @FXML
+    private void afficheFraisN() throws IOException {
+        App.setRoot("FicheNovembre");
+    }
+    @FXML
+    private void afficheFraisD() throws IOException {
+        App.setRoot("FicheDecembre");
+    }
+
+    @FXML
+    private void createFiche() throws IOException {
+        App.setRoot("Fiche_frais");
+    }
+        
+    
+
 
     }
-}
+
