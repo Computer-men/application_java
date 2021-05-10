@@ -9,13 +9,13 @@ import java.sql.SQLException;
 
 
 
-import javafx.scene.control.TextField;
+// import javafx.scene.control.TextField;
 
 public class Bdd {
-    final static String dbURL = "jdbc:mysql://localhost:3306/projet_java";
+    final static String dbURL = "jdbc:mysql://localhost:3306/projet";
     final static String username = "root";
-    final static String password = "root";
-    private TextField user = new TextField();
+    final static String password = "toor";
+    // private TextField user = new TextField();
 
     public static void conn() {
 
@@ -24,7 +24,7 @@ public class Bdd {
             Connection conn = DriverManager.getConnection(dbURL, username, password);
             if (conn != null) {
                 System.out.println("Connected");
-                String sql = "SELECT ag_nom , ag_password FROM projet_java.agents;";
+                String sql = "SELECT us_identifiant , us_pasword FROM projet.user;";
                 PreparedStatement statement = conn.prepareStatement(sql);
                 ResultSet result = statement.executeQuery(sql);
                 int count = 0;
@@ -48,29 +48,28 @@ public class Bdd {
         }
     }
 
-    public static String match(String nom) {
+    public static String match(String nom, String Password) {
         try {
 
             Connection conn2 = DriverManager.getConnection(dbURL, username, password);
             if (conn2 != null) {
-                String sql2 = ("SELECT ag_nom , ag_password, ag_matricule FROM projet_java.agents WHERE ag_nom='" + nom + "'");
+                String sql2 = ("SELECT us_identifiant, us_pasword, id_matricule, fk_profession FROM projet.user WHERE us_identifiant='" + nom + "'AND us_pasword='"+ Password + "'");
                 PreparedStatement statement = conn2.prepareStatement(sql2);
                 ResultSet result = statement.executeQuery(sql2);
 
                 while (result.next()) {
-                    nom = result.getString(1);
-                    String password = result.getString(2);
-                    String matri = result.getString(3);
+                    String NomUser = result.getString(1);
+                    String password_user = result.getString(2);
+                    String Matri = result.getString(3);
+                    String Fonction = result.getString(4);
 
-                    String test = "Connection reussi !";
+                    String test = "Connexion reussie !";
 
-                    utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri);
+                    utilisateurconnect userconnect = new utilisateurconnect(NomUser, password_user, Matri, Fonction);
                     userconnect.afficherInfoDuConnectCompta();
 
-
-                    //Liste_du_connecte password_du_connecte = personne_connecte.get(1);
-                    //System.out.print(nom_du_connect_variable.getNom_du_connect());
-
+                    // Liste_du_connecte password_du_connecte = personne_connecte.get(1);
+                    // System.out.print(nom_du_connect_variable.getNom_du_connect());
 
                     return test;
                     // System.out.println(nom);
@@ -87,6 +86,5 @@ public class Bdd {
         }
         return nom;
     }
-
 
 }

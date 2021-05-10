@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
@@ -7,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="723.0" maxWidth="751.0" minHeight="549.0" minWidth="531.0" prefHeight="723.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computermen.fiche">
    <children>
       <Line endX="332.0" endY="-0.20711517333984375" layoutX="376.0" layoutY="45.0" startX="-319.60711669921875" startY="-0.20711517333984375" />
       <Line endX="-180.60711669921875" endY="491.0" layoutX="238.0" layoutY="190.0" startX="-180.89999389648438" startY="-144.5" />
@@ -16,19 +17,13 @@
       <Label layoutX="271.0" layoutY="34.0" prefHeight="53.0" prefWidth="320.0" text="Fiche de frais" textAlignment="CENTER" textOverrun="CLIP">
          <font>
             <Font size="36.0" />
-         </font>
-      </Label>
+         </font></Label>
       <Line endX="103.2928466796875" endY="2.899993896484375" layoutX="604.0" layoutY="184.0" startX="-545.9000244140625" startY="0.5" />
       <Line endX="174.5" endY="-217.0" layoutX="498.0" layoutY="425.0" startX="174.5" startY="169.4000244140625" />
-      <Label layoutX="88.0" layoutY="93.0" prefHeight="17.0" prefWidth="77.0" text="Métier" />
-      <Label layoutX="200.0" layoutY="93.0" prefHeight="17.0" prefWidth="77.0" text="Matricule" />
-      <Label layoutX="381.0" layoutY="93.0" prefHeight="17.0" prefWidth="77.0" text="Nom" />
-      <Label layoutX="430.0" layoutY="93.0" prefHeight="17.0" prefWidth="66.0" text="Prénom" />
-      <Label layoutX="116.0" layoutY="146.0" prefHeight="30.0" prefWidth="99.0" text="Aout 2021">
+      <Label layoutX="116.0" layoutY="146.0" prefHeight="30.0" prefWidth="99.0" text="Janvier 2021">
          <font>
             <Font size="18.0" />
-         </font>
-      </Label>
+         </font></Label>
       <Line endX="101.7928466796875" endY="86.5" layoutX="606.0" layoutY="594.0" startX="-548.1071166992188" startY="86.5" />
       <Line endX="483.0" layoutX="189.0" layoutY="208.0" startX="-100.0" />
       <Line endX="-90.5" endY="288.29998779296875" layoutX="179.0" layoutY="304.0" startX="-90.5" startY="-95.5" />
@@ -110,25 +105,31 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Text layoutX="458.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL">
+      <Text layoutX="286.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL">
          <font>
             <Font size="13.0" />
          </font>
       </Text>
-      <Line endX="225.199951171875" layoutX="446.0" layoutY="616.0" startX="-2.5" />
-      <Line endX="227.199951171875" layoutX="445.0" layoutY="655.0" startX="-1.5" />
-      <Line endX="185.0" endY="-11.5" layoutX="258.0" layoutY="628.0" startX="185.0" startY="27.5" />
-      <Line endX="447.699951171875" endY="-20.5" layoutX="224.0" layoutY="637.0" startX="447.699951171875" startY="17.5" />
-      <Line endX="245.5999755859375" endY="-10.5" layoutX="263.0" layoutY="627.0" startX="245.5999755859375" startY="28.0" />
+      <Line endX="225.199951171875" layoutX="274.0" layoutY="616.0" startX="-2.5" />
+      <Line endX="227.199951171875" layoutX="273.0" layoutY="655.0" startX="-1.5" />
+      <Line endX="185.0" endY="-11.5" layoutX="86.0" layoutY="628.0" startX="185.0" startY="27.5" />
+      <Line endX="447.699951171875" endY="-20.5" layoutX="52.0" layoutY="637.0" startX="447.699951171875" startY="17.5" />
+      <Line endX="245.5999755859375" endY="-10.5" layoutX="91.0" layoutY="627.0" startX="245.5999755859375" startY="28.0" />
       <Text layoutX="371.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="80.00" textAlignment="CENTER" wrappingWidth="119.39996337890625" />
       <Text layoutX="371.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29.00" textAlignment="CENTER" wrappingWidth="119.39996337890625" />
-      <TextField layoutX="554.0" layoutY="244.0" prefHeight="36.0" prefWidth="77.0" />
-      <TextField layoutX="554.0" layoutY="289.0" prefHeight="36.0" prefWidth="77.0" />
-      <TextField layoutX="554.0" layoutY="334.0" prefHeight="36.0" prefWidth="77.0" />
+      <TextField editable="false" layoutX="554.0" layoutY="244.0" prefHeight="36.0" prefWidth="77.0" />
+      <TextField editable="false" layoutX="554.0" layoutY="289.0" prefHeight="36.0" prefWidth="77.0" />
+      <TextField editable="false" layoutX="554.0" layoutY="334.0" prefHeight="36.0" prefWidth="77.0" />
       <TextField layoutX="392.0" layoutY="334.0" prefHeight="36.0" prefWidth="77.0" />
       <TextField layoutX="575.0" layoutY="444.0" prefHeight="36.0" prefWidth="77.0" />
       <TextField layoutX="575.0" layoutY="492.0" prefHeight="36.0" prefWidth="77.0" />
       <TextField layoutX="575.0" layoutY="548.0" prefHeight="36.0" prefWidth="77.0" />
-      <TextField layoutX="516.0" layoutY="620.0" prefHeight="30.0" prefWidth="141.0" />
+      <TextField editable="false" layoutX="344.0" layoutY="620.0" prefHeight="30.0" prefWidth="141.0" />
+      <Button layoutX="598.0" layoutY="121.0" mnemonicParsing="false" onAction="#actualiser" text="Actualisation" />
+      <Button layoutX="88.0" layoutY="622.0" mnemonicParsing="false" onAction="#goUser" prefHeight="25.0" prefWidth="128.0" text="Retour" />
+      <Button layoutX="544.0" layoutY="624.0" mnemonicParsing="false" onAction="#goUser" prefHeight="25.0" prefWidth="128.0" text="Validé" />
+      <Text fx:id="metier" layoutX="67.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Métier" />
+      <Text fx:id="matricule" layoutX="148.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" />
+      <Text fx:id="nom" layoutX="257.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" wrappingWidth="34.470703125" />
    </children>
 </Pane>

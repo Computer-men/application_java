@@ -1,29 +1,19 @@
 package computermen;
 
-import java.io.IOException;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class utilisateurconnect {
     
 
     private static String nom_du_connect;
     private static String password_du_connect;
     private static String matricule_du_connect;
+    private static String fonction_du_connect;
 
 
-    public utilisateurconnect(String name, String password, String matricule){
+    public utilisateurconnect(String name, String password, String matricule, String fonction){
         nom_du_connect = name;
         password_du_connect = password;
         matricule_du_connect = matricule;
+        fonction_du_connect = fonction;
     }
     
     public void afficherInfoDuConnectCompta() {
@@ -31,6 +21,7 @@ public class utilisateurconnect {
         System.out.println( "nom: " + getNom_du_connect() );
         System.out.println( "matricule: " + getMatricule_du_connect() );
         System.out.println( "mot de passe: " + getPassword_du_connect());
+        System.out.println("Fonction: " + getFonction_du_connect());
     } 
 
     /*public String getNom_du_connect(){
@@ -59,6 +50,14 @@ public class utilisateurconnect {
 
     public void setMatricule_du_connect(String matricule_du_connect1){
         matricule_du_connect = matricule_du_connect1;
+    }
+
+    public static String getFonction_du_connect(){
+        return fonction_du_connect;
+    }
+
+    public void setFonction_du_connect(String fonction_du_connect1){
+        fonction_du_connect = fonction_du_connect1;
     }
 
 

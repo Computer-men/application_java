@@ -2,10 +2,10 @@ package computermen;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+// import javafx.collections.FXCollections;
+// import javafx.collections.ObservableList;
+// import javafx.scene.control.ChoiceBox;
+// import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 public class PanelCompta {
@@ -38,10 +38,11 @@ public class PanelCompta {
         //System.out.println("test");
 
         //Remet ces variable à null afin d'enlever l'utilisateurconnect
-        String nom = null;
+        String nom=null;
         String password=null;
-        String matri = null;
-        utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri);
+        String matri=null;
+        String fonction=null;
+        utilisateurconnect userconnect = new utilisateurconnect(nom, password, matri, fonction);
     }
 
 
@@ -52,7 +53,7 @@ public class PanelCompta {
             // name.setText);
             
             if(utilisateurconnect.getNom_du_connect() == null){
-                name.setText("Vous n'est pas connect !");
+                name.setText("Vous n'êtes pas connecté !");
                 matricule.setText(" ");
             } else {
                 name.setText(utilisateurconnect.getNom_du_connect());

@@ -8,20 +8,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
 <VBox alignment="CENTER" prefHeight="269.0" prefWidth="599.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computermen.Connexion">
    <children>
       <Pane prefHeight="231.0" prefWidth="575.0">
          <children>
-            <ChoiceBox fx:id="amsd" layoutX="224.0" layoutY="102.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="amsd" disable="true" layoutX="224.0" layoutY="102.0" prefWidth="150.0" visible="false" />
             <Button layoutX="486.0" layoutY="171.0" onAction="#goCompta" text="Compta" />
             <TextField fx:id="User" layoutX="225.0" layoutY="37.0" />
             <Label layoutX="159.0" layoutY="41.0" text="Utilisateur" />
             <Label layoutX="146.0" layoutY="70.0" text="Mot de passe" />
             <Label layoutX="159.0" layoutY="138.0" text="Fonction" visible="false" />
-            <PasswordField layoutX="225.0" layoutY="66.0" />
+            <PasswordField fx:id="pass" layoutX="225.0" layoutY="66.0" />
             <Button layoutX="407.0" layoutY="171.0" mnemonicParsing="false" onAction="#goUser" text="Utilisateur" />
             <Button layoutX="263.0" layoutY="159.0" mnemonicParsing="false" onAction="#match" text="Connexion" />
+            <Text fx:id="renduBDD" layoutX="442.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </Pane>
    </children>
